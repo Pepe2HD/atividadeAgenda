@@ -84,7 +84,7 @@ int verifNome(char nome[]) {
 
 int verifTel(char telefone[]) {
     int t = strlen(telefone);
-    if(t > 16 || t < 15) {
+    if(t > 16 || t < 13) {
         return 1;
     } else {
         return 0;
@@ -225,3 +225,4 @@ void carregarAgenda(Agenda *a, const char *nomeArquivo) {
     }
     fclose(f);
 }
+
